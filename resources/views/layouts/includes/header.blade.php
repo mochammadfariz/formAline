@@ -34,4 +34,3 @@
     </div> <!-- container.// -->
 </section> <!-- header-main .// -->
 <hr>
-</header> <!-- section-header.// -->

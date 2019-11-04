@@ -12,9 +12,22 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('modul.dheo.home');
+});
+
+Route::get('/pertanyaan', function () {
+    return view('modul.guruh.question');
 });
 
 Route::get('/home', function () {
-    return view('modul.home');
+    return view('modul.guruh.home');
+});
+Route::get('/form', function () {
+    return view('modul.dheo.form');
+});
+Route::get('/profilku', function () {
+    return view('modul.profil.profilku');
+});
+Route::get('/profilku', function () {
+    return view('modul.profil.profilku');
 });

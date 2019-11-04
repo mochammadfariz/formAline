@@ -30,7 +30,7 @@
   </body>
 
       <!-- awal footer -->
-    <footer style="position: absolute;
+    <footer style="position: relative;
     bottom: 0;
     width: 100%;
     height: 70px;

@@ -1,0 +1,30 @@
+#parent {
+    list-style: none;
+    width: 100%;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#parent>li {
+    display: inline-block;
+    width: 32%;
+    height: 100%;
+}
+
+#parent>li:nth-child(even) {
+  
+}
+
+.box {
+    position: relative;
+}
+
+.bet_time {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
