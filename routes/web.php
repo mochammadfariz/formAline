@@ -28,6 +28,4 @@ Route::get('/form', function () {
 Route::get('/profilku', function () {
     return view('modul.profil.profilku');
 });
-Route::get('/profilku', function () {
-    return view('modul.profil.profilku');
-});
+

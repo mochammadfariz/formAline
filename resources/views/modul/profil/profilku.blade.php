@@ -12,16 +12,18 @@
     <link href="css/ui.css" rel="stylesheet" type="text/css"/>
     <link href="css/tengah.css" rel="stylesheet" type="text/css"/>
     <link href="css/responsive.css" rel="stylesheet" media="only screen and (max-width: 1200px)" />
+    <!-- Css untuk print porfolio -->
+    <link href="css/w3.css" rel="stylesheet"/>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
 
-    <title>Hello, world!</title>
+    <title>Portofolio FormALine</title>
     
   </head>
   <body style="margin-bottom:150px;">
   <!-- AWAL HEADER -->
-  <section class="header-main shadow" >
+  <section class="header-main shadow d-none d-lg-block" >
 	<div class="container">
 <div class="row align-items-center">
 	<div class="col-lg-3 col-sm-4">
@@ -58,10 +60,13 @@
 </section> <!-- header-main .// -->
 <!-- AKHIR HEADER -->
 <hr>
+
+
    <!-- mulai content -->
     <div class="container">
+    <div id="isi">
         <div class="row">
-            <div class="col-lg-4 col-xs-12">
+            <div class="col-lg-4 d-none d-lg-block">
              <img style="display:inline-block;margin-right:10px;" height="10%" width="auto" src="asset/img/icon/television.svg" alt="">
              <h4  style="display:inline-block;" >Channel Ku</h4>
              	<form action="#" class="search-wrap">
@@ -95,7 +100,7 @@
              <!-- akhir prev next -->
              <button type="button" class="btn btn-primary">Kembali</button>
             </div>
-            <div class="col-lg-5 col-xs-12">
+            <div class="col-lg-5 col-sm-12 col-xs-12">
                       <div class="row">
                           <div>
                             <img  style="margin-right:10px;" src="asset/img/icon/graduate.svg" alt="">
@@ -106,6 +111,9 @@
                             <h5 class="font-weight-light"> S1 Teknik Informatika Universitas Gunadarma </h5>
                           </div>
                       </div>
+                        <div class="text-center d-lg-none">
+                        <img height="200px" width="auto" class=" ml-5 mt-4" src="asset/img/foto/guruhformal.jpg" alt="">
+                        </div>
                       <!-- Pencapaianku -->
                       <h4 class="mt-5">Pencapaian Ku</h4>
                           <div style="border-style: groove; " class="text-secondary" >
@@ -197,13 +205,13 @@
                           </div>
                           
             </div>
-             <div class="col-lg-3 col-xs-12">
-         
-             <img height="120px" width="auto" class="rounded-circle ml-5 mt-2 " src="asset/img/foto/guruh.jpg" alt="">
+             <div class="col-lg-3 col-sm-12 col-xs-12">
+
+             <img height="120px" width="auto" class="rounded-circle ml-5 mt-2 d-none d-lg-block " src="asset/img/foto/guruhformal.jpg" alt="">
              <br>
-             <button type="button" class="btn btn-primary mt-4 ml-5">Ubah Foto <i class="fas fa-camera"></i></button>
+             <button type="button" class="btn btn-primary mt-4 ml-5 d-none d-lg-block">Ubah Foto <i class="fas fa-camera"></i></button>
              
-             <h4 class="mt-5">Badge Ku <sup style="color:DeepSkyBlue">2</sup> </h4>
+             <h4 class="mt-5">Badge Ku <sup style="color:DeepSkyBlue">4</sup> </h4>
                           <div style="border-style: groove; " class="text-secondary" >
                               <a  href="buzz.html" title="100 kali pencarian">
  <img class="ml-4" height="50px" width="auto" src="asset/img/icon/keker.png" alt=""> </a>
@@ -221,21 +229,25 @@
                                  <img height="60px" width="60px" class="rounded-circle ml-3 mt-2 mb-2" class="ml-3"  src="asset/img/foto/naila.PNG" alt="">
                                   <img height="60px" width="60px" class="rounded-circle ml-2 mt-2 mb-2" class="ml-3"  src="asset/img/foto/rahel.PNG" alt="">
                           </div>  
-                         <button type="button" class="btn btn-info mt-5">Cetak Portofolio</button>     
+                     <button onclick="mywholepage()" style="" id = "print" type="button" class="btn btn-info mr-5 ml-5 mt-5 d-none d-lg-block ">Cetak Portofolio</button>   
                          <div id="foo" class="mt-5">
-    <!-- stuff -->
+
    
 </div>     
             </div>
         </div>
      </div>
+      <!-- tutp akhir id isi untuk konten print diapit ditengah comment -->
+     </div>
+      <!-- tutp akhir id isi untuk konten print diapit ditengah comment -->
      <br>
      <div class="box mt-5">
     <!-- stuff -->
-    <div class="bet_time">
+    <div class="bet_time d-none d-lg-block" >
     <a class="ml-5 mt-5 " style="display:inline-block;"id="mybutton " href=""> Tentang Kami </a>
     <a style="display:inline-block;" class=" ml-5 mt-5 " id="mybutton " href=""> Bantuan </a>
     <a style="display:inline-block;" class=" mr-5 ml-5  mt-5 " id="mybutton " href=""> Logout </a>
+      
     </div>
 </div>
   </div>
@@ -243,6 +255,18 @@
   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- cetak portofolio -->
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/printThis.js" type="text/javascript"></script>
+    <script type="text/javascript">
+     function mywholepage(){
+       window.print();
+     }
+    </script>
+  
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

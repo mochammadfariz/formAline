@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row">
         <!-- Channel & Mata Kuliah -->
-        <div class="col">
+        <div class="col-lg-3 col-sm-12 col-xs-12">
             <div>
                 <h5>
                     <img src="http://localhost:8000/asset/img/icon/television.svg" aria-hidden="true" height="30">
@@ -102,7 +102,7 @@
         </div>
 
         <!-- Kumpulan Pertanyaan di Mata Kuliah -->
-        <div class="col-6">
+        <div class="col-lg-6 col-xs-12 col-sm-12">
             <!-- Judul -->
                 <div class="row">
                     <div class="col align-items-center" style="text-align:center;">
@@ -260,7 +260,7 @@
         </div>
 
         <!-- Profil & Pertanyaan-->
-        <div class="col">
+        <div class="col-lg-3 col-sm-12 col-xs-12">
             <div>
                 <h5>
                     <img src="http://localhost:8000/asset/img/icon/graduate-student-avatar.svg" aria-hidden="true" height="50" width="50">

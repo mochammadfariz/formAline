@@ -62,7 +62,7 @@
    <!-- mulai content -->
         <div class="container">
     <div class="row align-items-center">
-        <div class="col-lg-3 col-sm-4">
+        <div class="col-lg-3 col-sm-12 col-xs-12">
                 <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-3">
@@ -133,7 +133,7 @@
                 </div>
                         
         </div>
-        <div class="col-lg-6 col-sm-8">
+        <div class="col-lg-6 col-sm-12 col-xs-12">
                 <form action="#" class="search-wrap">
                     <div class="input-group w-100">
                         <input type="text" class="form-control" style="width:40%;" placeholder="Cari Pertanyaan">
@@ -154,7 +154,7 @@
                           {{-- </div> --}}
                 </form> <!-- search-wrap .end// -->
         </div> <!-- col.// -->
-        <div class="col-lg-3 col-sm-4">
+        <div class="col-lg-3 col-sm-12 col-xs-12">
             <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-3">
